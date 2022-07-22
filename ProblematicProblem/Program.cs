@@ -16,6 +16,10 @@ namespace ProblematicProblem
             Console.Write("Hello, welcome to the random activity generator! \nWould you like to generate a random activity? yes/no: ");
             string cont = Console.ReadLine().ToLower();
             Console.WriteLine();
+            if (cont == "no")
+            {
+                return;
+            }
             Console.Write("We are going to need your information first! What is your name? ");
             string userName = Console.ReadLine().ToLower();
             Console.WriteLine();
